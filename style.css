@@ -74,4 +74,17 @@ body {
 
 .temas a p {
     margin-top: 10px;
+} 
+.livro-link {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.livro-link:hover {
+    transform: scale(1.05);
 }
