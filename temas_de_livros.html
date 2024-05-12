@@ -39,14 +39,6 @@
     <script>
         // Função para mostrar apenas os livros do tema selecionado e ocultar os outros
         function showBooks(theme) {
-            const allThemes = document.querySelectorAll('h2');
-            allThemes.forEach(item => {
-                if (item.id === theme) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
             const allBooks = document.querySelectorAll('.theme-books');
             allBooks.forEach(bookList => {
                 if (bookList.id === theme + '-books') {
