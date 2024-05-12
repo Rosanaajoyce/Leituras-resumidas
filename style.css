@@ -9,3 +9,33 @@ body {
 .temas img {
     margin: 0 10px; /* Define a distância entre as imagens */
 }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.temas {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tema {
+    text-align: center;
+}
+
+.nome-tema {
+    margin-top: 10px;
+}
+
+.link-temas {
+    margin-top: 20px;
+}
