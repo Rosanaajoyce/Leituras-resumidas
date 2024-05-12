@@ -47,6 +47,14 @@
                     item.style.display = 'none';
                 }
             });
+            const allBooks = document.querySelectorAll('.theme-books');
+            allBooks.forEach(bookList => {
+                if (bookList.id === theme + '-books') {
+                    bookList.style.display = 'block';
+                } else {
+                    bookList.style.display = 'none';
+                }
+            });
         }
 
         // Event listeners para cada tema
