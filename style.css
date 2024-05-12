@@ -1,1 +1,11 @@
-/* Adicione estilos conforme necessário */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.temas img {
+    margin: 0 10px; /* Define a distância entre as imagens */
+}
