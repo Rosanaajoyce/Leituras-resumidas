@@ -10,7 +10,7 @@
     <h1>Temas de Livros</h1>
     
     <h2 id="romance">Romance</h2>
-    <ul>
+    <ul id="romance-books" class="theme-books">
         <!-- Links para os resumos dos livros de romance -->
         <li><a href="resumo_livro1_romance.html">Livro 1</a></li>
         <li><a href="resumo_livro2_romance.html">Livro 2</a></li>
@@ -19,7 +19,7 @@
     </ul>
    
     <h2 id="ficcao">Ficção</h2>
-    <ul>
+    <ul id="ficcao-books" class="theme-books">
         <!-- Links para os resumos dos livros de ficção -->
         <li><a href="resumo_livro1_ficcao.html">Livro 1</a></li>
         <li><a href="resumo_livro2_ficcao.html">Livro 2</a></li>
@@ -28,12 +28,34 @@
     </ul>
 
     <h2 id="fantasia">Fantasia</h2>
-    <ul>
+    <ul id="fantasia-books" class="theme-books">
         <!-- Links para os resumos dos livros de fantasia -->
         <li><a href="resumo_livro1_fantasia.html">Livro 1</a></li>
         <li><a href="resumo_livro2_fantasia.html">Livro 2</a></li>
         <li><a href="resumo_livro3_fantasia.html">Livro 3</a></li>
         <!-- Adicione os links para os outros livros de fantasia aqui -->
     </ul>
+
+    <script>
+        // Função para mostrar apenas os livros do tema selecionado e ocultar os outros
+        function showBooks(theme) {
+            const allBooks = document.querySelectorAll('.theme-books');
+            allBooks.forEach(bookList => {
+                if (bookList.id === theme + '-books') {
+                    bookList.style.display = 'block';
+                } else {
+                    bookList.style.display = 'none';
+                }
+            });
+        }
+
+        // Event listeners para cada tema
+        document.getElementById('romance').addEventListener('click', () => showBooks('romance'));
+        document.getElementById('ficcao').addEventListener('click', () => showBooks('ficcao'));
+        document.getElementById('fantasia').addEventListener('click', () => showBooks('fantasia'));
+
+        // Mostrar livros de romance por padrão
+        showBooks('romance');
+    </script>
 </body>
 </html>
