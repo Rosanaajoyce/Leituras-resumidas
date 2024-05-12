@@ -1,48 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria - Temas de Livros</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="titulo">Escolha um Tema</h1>
-        <div class="livros">
-            <!-- Livros de Romance -->
-            <a href="resumo_livro1_romance.html" class="livro-link">
-                <img src="91gf8LL7WCL.SY466.jpg" alt="Livro 1 de Romance" width="200" height="300">
-            </a>
-            <a href="resumo_livro2_romance.html" class="livro-link">
-                <img src="D_NQ_NP_749351-MLB51720190175_092022-F.jpg" alt="Livro 2 de Romance" width="200" height="300">
-            </a>
-            <a href="resumo_livro3_romance.html" class="livro-link">
-                <img src="OIP (3).jpeg" alt="Livro 3 de Romance" width="200" height="300">
-            </a>
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            <!-- Livros de Ficção -->
-            <a href="resumo_livro1_ficcao.html" class="livro-link">
-                <img src="R (2).png" alt="Livro 1 de Ficção" width="200" height="300">
-            </a>
-            <a href="resumo_livro2_ficcao.html" class="livro-link">
-                <img src="9786587759005.jpg" alt="Livro 2 de Ficção" width="200" height="300">
-            </a>
-            <a href="resumo_livro3_ficcao.html" class="livro-link">
-                <img src="OIP (4).jpeg" alt="Livro 3 de Ficção" width="200" height="300">
-            </a>
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
 
-            <!-- Livros de Fantasia -->
-            <a href="resumo_livro1_fantasia.html" class="livro-link">
-                <img src="R (1).jpeg" alt="Livro 1 de Fantasia" width="200" height="300">
-            </a>
-            <a href="resumo_livro2_fantasia.html" class="livro-link">
-                <img src="9678-1379x2048.jpeg" alt="Livro 2 de Fantasia" width="200" height="300">
-            </a>
-            <a href="resumo_livro3_fantasia.html" class="livro-link">
-                <img src="51okhQeCXsL.jpg" alt="Livro 3 de Fantasia" width="200" height="300">
-            </a>
-        </div>
-    </div>
-</body>
-</html>
+/* Estilos para o container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o título */
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a grade de livros */
+.livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Estilos para os links dos livros */
+.livro-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos para as imagens dos livros */
+.livro-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
