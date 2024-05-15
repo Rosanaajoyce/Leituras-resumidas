@@ -5,43 +5,49 @@
     box-sizing: border-box;
 }
 
-/* Estilos para o corpo da página */
+/* Estilos globais para o corpo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
 
-/* Estilos para o container principal */
+/* Estilos globais para containers */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Estilos para o título */
-.titulo {
+/* Estilos específicos para a página inicial */
+.homepage .titulo {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Estilos para a grade de livros */
-.livros {
+/* Estilos específicos para a página de livros de fantasia */
+.fantasia-page .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a grade de livros na página de fantasia */
+.fantasia-page .livros {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
 }
 
-/* Estilos para cada livro */
-.livro {
+/* Estilos para cada livro na página de fantasia */
+.fantasia-page .livro {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.livro img {
+.fantasia-page .livro img {
     display: block;
     margin: 0 auto;
 }
 
-.livro p {
+.fantasia-page .livro p {
     margin-top: 10px;
 }
