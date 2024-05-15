@@ -31,16 +31,17 @@ body {
     grid-gap: 20px;
 }
 
-/* Estilos para os links dos livros */
-.livro-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+/* Estilos para cada livro */
+.livro {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Estilos para as imagens dos livros */
-.livro-link img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.livro img {
+    display: block;
+    margin: 0 auto;
+}
+
+.livro p {
+    margin-top: 10px;
 }
