@@ -18,57 +18,57 @@ body {
     padding: 20px;
 }
 
-/* Estilos específicos para a página inicial */
-.homepage .titulo {
+/* Estilos específicos para títulos */
+.titulo {
     text-align: center;
     margin-bottom: 20px;
 }
 
 /* Estilos para a lista de temas */
-.homepage .temas {
+.temas {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
 /* Estilos para cada tema */
-.homepage .tema {
+.tema {
     text-align: center;
-    width: 250px;
-    text-decoration: none; /* Remove sublinhado */
+    text-decoration: none;
 }
 
-.homepage .tema img {
-    width: 100%;
+.tema img {
+    width: 300px;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 15px;
 }
 
-.homepage .tema p {
+.tema p {
     margin-top: 10px;
     font-weight: bold;
 }
 
-/* Estilos específicos para a página de tema romance, ficção e fantasia */
-.tema-page .livro-info,
-.tema-page .livro-info {
+/* Estilos para os livros */
+.livros {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-.tema-page .livro-info .livro {
-    width: 250px;
-    text-align: center;
-    text-decoration: none;
+.livro img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-.tema-page .livro-info .livro img {
-    border-radius: 10px; /* Adiciona bordas arredondadas às imagens dos livros */
+.livro p {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
 }
