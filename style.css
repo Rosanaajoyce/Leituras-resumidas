@@ -39,13 +39,11 @@ body {
 /* Estilos para cada tema */
 .tema {
     text-align: center;
-    width: 250px;
-    margin-bottom: 20px;
 }
 
 .tema img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 450px;
     display: block;
     margin: 0 auto;
 }
@@ -53,8 +51,4 @@ body {
 .tema p {
     margin-top: 10px;
     font-weight: bold;
-}
-
-.tema button {
-    margin-top: 10px;
 }
