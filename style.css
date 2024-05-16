@@ -19,13 +19,13 @@ body {
 }
 
 /* Estilos específicos para a página inicial */
-.homepage .titulo {
+.titulo {
     text-align: center;
     margin-bottom: 20px;
 }
 
 /* Estilos para a lista de temas */
-.homepage .temas {
+.temas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,19 +34,18 @@ body {
 }
 
 /* Estilos para cada tema */
-.homepage .tema {
+.tema {
     text-align: center;
     width: 200px;
 }
 
-.homepage .tema img {
+.tema img {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.homepage .tema p {
+.tema p {
     margin-top: 10px;
     font-weight: bold;
-}
