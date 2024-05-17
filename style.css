@@ -18,12 +18,6 @@ body {
     padding: 20px;
 }
 
-/* Estilos específicos para a página inicial */
-.titulo {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 /* Estilos para a lista de temas */
 .temas {
     display: flex;
